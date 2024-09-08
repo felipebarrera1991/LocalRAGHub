@@ -1,0 +1,15 @@
+name: GenAI
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.9.*
+  - pip
+  - pip:
+    - pypdf
+    - langchain
+    - chromadb # Vector storage
+    - pytest
+    # pip install -U langchain-community
+    # pip install -U langchain-chroma
+    # pip install flask

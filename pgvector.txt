@@ -1,0 +1,10 @@
+# Video
+https://www.youtube.com/watch?v=FDBnyJu_Ndg
+
+# Instalar docker
+docker pull ankane/pgvector
+
+# 
+docker run --name pgvector-demo -e POSTGRES_PASSWORD=test -p 5432:5432 ankane/pgvector
+
+# pip install psycopg2-binary pgvector

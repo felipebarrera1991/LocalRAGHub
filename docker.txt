@@ -1,0 +1,20 @@
+# Rodar docker de ollama
+sudo docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+
+# Modelo embedding
+sudo docker exec -it ollama ollama run nomic-embed-text
+
+# Modelo llama3.1
+sudo docker exec -it ollama ollama run llama3.1
+
+
+# Modelo de embadding ollama
+https://ollama.com/library/nomic-embed-text
+
+
+# Comandos docker
+docker ps -a
+sudo docker rm CONTAINER ID
+
+# Comandos para rodar RAG local
+rodar primeiro o arquivo populate_database.pydoque
